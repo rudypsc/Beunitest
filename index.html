@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protótipo Beuni – Campanhas de Brindes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TELA 1 - Login -->
+  <section class="screen login">
+    <div class="container">
+      <h1>Plataforma Beuni</h1>
+      <p>Crie campanhas de brinde personalizadas para seus clientes.</p>
+      <input type="email" placeholder="E-mail" />
+      <input type="password" placeholder="Senha" />
+      <button>Entrar</button>
+      <p><a href="#">Esqueceu a senha?</a></p> 
+      <p>Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+    </div>
+  </section>
+
+  <!-- TELA 2 - Dashboard -->
+  <section class="screen dashboard">
+    <div class="container">
+      <h2>Olá, Márcia!</h2>
+      <p>Acompanhe suas campanhas</p>
+      <div class="summary">
+        <div class="card">Campanhas Ativas: 3</div>
+        <div class="card">Entregas Pendentes: 15</div>
+        <div class="card">Última Campanha: Dia do Cliente</div>
+      </div>
+      <button class="primary">Nova Campanha</button>
+      <h3>Últimas Campanhas</h3>
+      <ul>
+        <li>Dia do Parceiro – Enviado</li>
+        <li>Natalina – Agendada</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TELA 3 - Seleção de Brinde -->
+  <section class="screen step">
+    <div class="container">
+      <h2>1. Selecione o Brinde</h2>
+      <select>
+        <option>Categoria</option>
+        <option>Canecas</option>
+        <option>Canetas</option>
+        <option>Mochilas</option>
+      </select>
+      <div class="grid">
+        <div class="product-card"><img src="https://via.placeholder.com/150"  alt="Brinde 1"><p>Caneca Personalizada</p></div>
+        <div class="product-card"><img src="https://via.placeholder.com/150"  alt="Brinde 2"><p>Caneta Eco</p></div>
+        <div class="product-card"><img src="https://via.placeholder.com/150"  alt="Brinde 3"><p>Mochila Executiva</p></div>
+      </div>
+      <button>Anterior</button>
+      <button class="primary">Próximo</button>
+    </div>
+  </section>
+
+  <!-- TELA 4 - Destinatários -->
+  <section class="screen step">
+    <div class="container">
+      <h2>2. Adicione os Destinatários</h2>
+      <p>Arraste ou selecione um arquivo CSV (.csv)</p>
+      <div class="csv-preview">
+        Nome | E-mail | Cargo | Data de Envio<br/>
+        João Silva | joao@empresa.com | Gerente | 15/12/2024<br/>
+        Maria Souza | maria@empresa.com | Analista | 15/12/2024
+      </div>
+      <p class="error">⚠ Erro encontrado: Linha 7 – campo e-mail vazio</p>
+      <button>Anterior</button>
+      <button class="primary">Próximo</button>
+    </div>
+  </section>
+
+  <!-- TELA 5 - Mensagem -->
+  <section class="screen step">
+    <div class="container">
+      <h2>3. Configure a Mensagem</h2>
+      <textarea placeholder="Escreva sua mensagem personalizada..."></textarea>
+      <h3>Preview do Cartão</h3>
+      <div class="card-preview">
+        <strong>AltaTech</strong><br/><br/>
+        Olá, João!<br/>
+        Muito obrigado pela parceria em 2024.<br/>
+        Esperamos que 2025 seja ainda melhor.
+      </div>
+      <button>Anterior</button>
+      <button class="primary">Próximo</button>
+    </div>
+  </section>
+
+  <!-- TELA 6 - Confirmação -->
+  <section class="screen step confirmation">
+    <div class="container">
+      <h2>4. Confirme os Detalhes</h2>
+      <ul>
+        <li><strong>Brinde:</strong> Caneca Personalizada</li>
+        <li><strong>Destinatários:</strong> 50</li>
+        <li><strong>Data de Envio:</strong> 15/12/2024</li>
+      </ul>
+      <button class="primary">Confirmar e Enviar</button>
+    </div>
+  </section>
+
+</body>
+</html>
